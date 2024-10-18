@@ -1,6 +1,6 @@
 {
     "name": "testerloop-server",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "devDependencies": {
         "@graphql-codegen/cli": "^2.16.4",
         "@graphql-codegen/typescript": "^2.8.7",

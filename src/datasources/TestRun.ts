@@ -19,11 +19,7 @@ export class TestRun {
         );
 
         const testExecutionIds = results
-            .filter((folder) =>
-                /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/.test(
-                    folder,
-                ),
-            )
+            .filter((folder) => /^(?!-)(.*)$/.test(folder))
             .map((folder) => ({ id: folder }));
 
         return getPaginatedData(testExecutionIds, {
